@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <!-- Defs for gradients or filters if needed -->
+  
+  <!-- Icon Group -->
+  <g transform="translate(10, 10)">
+    <!-- Tree (Green) -->
+    <path d="M75 60 L75 80 M55 60 Q75 20 95 60 Z" fill="#4CAF50" stroke="#4CAF50" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="70" y="60" width="10" height="20" fill="#5D4037" /> <!-- Trunk -->
+
+    <!-- House (Blue) -->
+    <path d="M10 40 L40 10 L70 40 L70 80 L10 80 Z" fill="none" stroke="#3a4e5e" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="30" y="55" width="20" height="25" fill="#3a4e5e" /> <!-- Door -->
+    
+    <!-- Hammer (Orange) - Angled overlay -->
+    <g transform="translate(50, 50) rotate(-45)">
+      <rect x="0" y="0" width="8" height="30" fill="#DE731B" rx="1" /> <!-- Handle -->
+      <path d="M-6 -5 L14 -5 L14 5 L-6 5 Z" fill="#333" /> <!-- Head Base -->
+      <path d="M-6 -5 Q-10 0 -6 5" fill="#333" /> <!-- Claw -->
+    </g>
+  </g>
+
+  <!-- Wordmark Group -->
+  <g transform="translate(110, 60)">
+    <text font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#3a4e5e">
+      <tspan x="0" y="0">HURON</tspan>
+      <tspan x="0" y="30">HOME WORKS</tspan>
+    </text>
+  </g>
+</svg>
