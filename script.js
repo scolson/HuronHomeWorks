@@ -53,11 +53,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('policies-modal');
     const btn = document.getElementById('policies-link');
     const span = document.getElementsByClassName('close-modal')[0];
+    const policiesContent = document.getElementById('policies-content');
+
+    function loadPolicies() {
+        if (policiesContent.children.length > 1) return; // Already loaded (comment node counts as 1)
+
+        try {
+            const data = window.COMPANY_POLICIES;
+            if (!data) throw new Error('Policies data not found');
+
+            let html = `<p>${data.intro}</p>`;
+
+            data.sections.forEach(section => {
+                html += `
+                    <h2>${section.title}</h2>
+                    <ul>
+                        ${section.items.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                `;
+            });
+
+            policiesContent.innerHTML = html;
+        } catch (error) {
+            console.error('Error loading policies:', error);
+            policiesContent.innerHTML = '<p>Error loading policies. Please try again later.</p>';
+        }
+    }
 
     if (modal && btn && span) {
         // Open modal
         btn.addEventListener('click', (e) => {
             e.preventDefault();
+            loadPolicies();
             modal.style.display = 'flex';
             document.body.style.overflow = 'hidden'; // Prevent background scrolling
             history.pushState(null, null, '#policies');
@@ -81,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Check for #policies in URL on load
         if (window.location.hash === '#policies') {
+            loadPolicies();
             modal.style.display = 'flex';
             document.body.style.overflow = 'hidden';
         }
