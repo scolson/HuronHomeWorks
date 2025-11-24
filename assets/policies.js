@@ -5,6 +5,7 @@ window.COMPANY_POLICIES = {
             "title": "Scheduling",
             "items": [
                 "We schedule projects on a first-come, first-served basis after reviewing your project details",
+                "Emergency calls are handled on a case-by-case basis. If your project is bumped by an emergency, we will do our best to accommodate you as soon as possible.",
                 "You’ll receive an appointment window to allow for travel, weather, and typical job variability (especially in Michigan!)",
                 "An adult (18+) must be present during the appointment"
             ]
@@ -33,6 +34,14 @@ window.COMPANY_POLICIES = {
                 "If less than 48 hours notice is given, the deposit will be forfeited to cover lost time and scheduling costs",
                 "Rescheduling due to a documented emergency may be allowed on a case-by-case basis. A small fee may apply to cover the impact to our schedule",
                 "If we arrive and cannot access the property (no adult home, locked out, pets not secured, unsafe conditions), the trip fee will be forfeited"
+            ]
+        },
+        {
+            "title": "Emergency & Rush Work",
+            "items": [
+                "Emergency and Rush calls are handled on a case-by-case basis. Due to the impact on scheduling, all emergency and rush calls are subject to extra fees and rates.",
+                "Emergency work will be brought to a state where it is no longer an emergency. Non-emergency work to finish a project will be scheduled as soon as possible.",
+                "We cannot accept all emergency calls. If we are unable to accept your emergency call, we will do our best to accommodate you as soon as possible."
             ]
         },
         {
