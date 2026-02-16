@@ -21,7 +21,7 @@ window.COMPANY_POLICIES = {
         {
             "title": "Payment",
             "items": [
-                "Payment is due at the completion of the job unless stated otherwise",
+                "Payment is due at the start of the job or start of change order unless stated otherwise",
                 "We accept cash, and common digital payment methods",
                 "Materials required require prepayment to reserve your time on the schedule",
                 "Late invoices will incur a fee to cover administrative costs"
@@ -82,6 +82,12 @@ window.COMPANY_POLICIES = {
                 "Manufacturer warranties apply to items we purchase and install when available",
                 "Issues caused by misuse, owner-supplied materials, or changes to the home after installation aren’t covered, but we’ll always help find a solution",
                 "Before and after photos and videos are taken to document the project for proof of completion as well as marketing purposes."
+            ]
+        },
+        {
+            "title": "Other",
+            "items": [
+                "Any dispute arising from this agreement shall be resolved by binding arbitration, with the arbitration costs shared equally by the parties and the prevailing party entitled to recover its reasonable fees and expenses."
             ]
         }
     ]
